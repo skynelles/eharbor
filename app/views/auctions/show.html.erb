@@ -1,0 +1,12 @@
+<h1><%= @auction.name %></h1>
+
+<dl class="info">
+  <dt>Posted:</dt>
+  <dd><%= time_ago_in_words @auction.created_at %> ago</dd>
+</dl>
+
+<div>
+  <%= @auction.description %>
+</div>
+
+<%= link_to "Back", auctions_path %>
